@@ -1,0 +1,182 @@
+[
+  {
+    "id": "quadrantids",
+    "names": { "zh": "象限仪座流星雨", "en": "Quadrantids" },
+    "activeStart": "2025-12-28",
+    "activeEnd": "2026-01-12",
+    "peakUTC": "2026-01-03T21:00:00Z",
+    "radiant": { "ra": 230, "dec": 49 },
+    "zhr": 80,
+    "parent": { "zh": "小行星 2003 EH1", "en": "Asteroid 2003 EH1" },
+    "notes": {
+      "zh": "极大非常短暂，只有几个小时；2026 年极大正值满月，月光干扰严重。",
+      "en": "The peak is very brief (a few hours); in 2026 it falls at Full Moon, with strong moonlight interference."
+    },
+    "visibleFrom": {
+      "zh": "北半球中高纬度最佳",
+      "en": "Best from mid-to-high northern latitudes"
+    }
+  },
+  {
+    "id": "lyrids",
+    "names": { "zh": "天琴座流星雨", "en": "Lyrids" },
+    "activeStart": "2026-04-14",
+    "activeEnd": "2026-04-30",
+    "peakUTC": "2026-04-22T19:40:00Z",
+    "radiant": { "ra": 271, "dec": 34 },
+    "zhr": 18,
+    "parent": { "zh": "C/1861 G1（撒切尔彗星）", "en": "C/1861 G1 (Thatcher)" },
+    "notes": {
+      "zh": "速度中等，偶有明亮火流星；极大时刻存在年际差异。",
+      "en": "Medium speed with occasional bright fireballs; peak timing varies from year to year."
+    },
+    "visibleFrom": {
+      "zh": "北半球为主，赤道两侧均可见",
+      "en": "Mainly northern, visible on both sides of the equator"
+    }
+  },
+  {
+    "id": "eta-aquariids",
+    "names": { "zh": "宝瓶座 η 流星雨", "en": "Eta Aquariids" },
+    "activeStart": "2026-04-19",
+    "activeEnd": "2026-05-28",
+    "peakUTC": "2026-05-06T00:00:00Z",
+    "radiant": { "ra": 338, "dec": -1 },
+    "zhr": 50,
+    "parent": { "zh": "1P/哈雷彗星", "en": "1P/Halley" },
+    "notes": {
+      "zh": "黎明前观测最佳，流星速度很快；2026 年极大受渐亏凸月干扰。",
+      "en": "Best before dawn; very fast meteors; the 2026 peak is disturbed by a gibbous waning Moon."
+    },
+    "visibleFrom": {
+      "zh": "南半球与低纬度地区最佳（黎明前）",
+      "en": "Best from southern and low latitudes (before dawn)"
+    }
+  },
+  {
+    "id": "s-delta-aquariids",
+    "names": { "zh": "南鱼座 δ 流星雨", "en": "Southern delta Aquariids" },
+    "activeStart": "2026-07-12",
+    "activeEnd": "2026-08-23",
+    "peakUTC": "2026-07-31T04:12:00Z",
+    "radiant": { "ra": 340, "dec": -16 },
+    "zhr": 25,
+    "parent": { "zh": "未完全确定（可能与 96P/Machholz 彗星群相关）", "en": "Uncertain (possibly linked to the 96P/Machholz complex)" },
+    "notes": {
+      "zh": "南半球与低纬地区更佳；与摩羯座 α 流星雨同期出现。",
+      "en": "Better from southern and low latitudes; active at the same time as the alpha Capricornids."
+    },
+    "visibleFrom": {
+      "zh": "南半球与低纬地区最佳",
+      "en": "Best from southern and low latitudes"
+    }
+  },
+  {
+    "id": "alpha-capricornids",
+    "names": { "zh": "摩羯座 α 流星雨", "en": "alpha Capricornids" },
+    "activeStart": "2026-07-03",
+    "activeEnd": "2026-08-15",
+    "peakUTC": "2026-07-31T04:12:00Z",
+    "radiant": { "ra": 307, "dec": -10 },
+    "zhr": 5,
+    "parent": { "zh": "169P/NEAT 彗星", "en": "Comet 169P/NEAT" },
+    "notes": {
+      "zh": "数量少但速度慢、常有明亮的火流星，值得耐心等待。",
+      "en": "Low rates but slow meteors with frequent bright fireballs; worth waiting for."
+    },
+    "visibleFrom": {
+      "zh": "赤道两侧均可见",
+      "en": "Visible from both sides of the equator"
+    }
+  },
+  {
+    "id": "perseids",
+    "names": { "zh": "英仙座流星雨", "en": "Perseids" },
+    "activeStart": "2026-07-17",
+    "activeEnd": "2026-08-24",
+    "peakUTC": "2026-08-13T03:00:00Z",
+    "radiant": { "ra": 48, "dec": 58 },
+    "zhr": 100,
+    "parent": { "zh": "109P/Swift-Tuttle 彗星", "en": "Comet 109P/Swift-Tuttle" },
+    "notes": {
+      "zh": "2026 年极大恰逢新月，无月光干扰；传统宽峰为 8 月 12 日 21:00 至 13 日 09:00 UT。",
+      "en": "The 2026 peak falls at New Moon with no moonlight interference; the traditional broad maximum runs Aug 12 21:00 to Aug 13 09:00 UT."
+    },
+    "visibleFrom": {
+      "zh": "北半球为主，中纬度最佳",
+      "en": "Mainly northern; mid-northern latitudes are best"
+    }
+  },
+  {
+    "id": "orionids",
+    "names": { "zh": "猎户座流星雨", "en": "Orionids" },
+    "activeStart": "2026-10-02",
+    "activeEnd": "2026-11-07",
+    "peakUTC": "2026-10-21T09:00:00Z",
+    "radiant": { "ra": 95, "dec": 16 },
+    "zhr": 20,
+    "parent": { "zh": "1P/哈雷彗星", "en": "1P/Halley" },
+    "notes": {
+      "zh": "速度很快，常有明亮流星；极大前后数夜活动相近。",
+      "en": "Fast meteors, often bright; activity stays similar for several nights around the peak."
+    },
+    "visibleFrom": {
+      "zh": "南北半球均可（午夜后最佳）",
+      "en": "Both hemispheres (best after midnight)"
+    }
+  },
+  {
+    "id": "leonids",
+    "names": { "zh": "狮子座流星雨", "en": "Leonids" },
+    "activeStart": "2026-11-06",
+    "activeEnd": "2026-11-30",
+    "peakUTC": "2026-11-17T23:45:00Z",
+    "radiant": { "ra": 152, "dec": 22 },
+    "zhr": 15,
+    "parent": { "zh": "55P/Tempel-Tuttle 彗星", "en": "Comet 55P/Tempel-Tuttle" },
+    "notes": {
+      "zh": "流星速度极快；2026 年为正常水平，无爆发预期。",
+      "en": "Extremely fast meteors; 2026 is a normal return with no outburst expected."
+    },
+    "visibleFrom": {
+      "zh": "北半球为主",
+      "en": "Mainly northern"
+    }
+  },
+  {
+    "id": "geminids",
+    "names": { "zh": "双子座流星雨", "en": "Geminids" },
+    "activeStart": "2026-12-04",
+    "activeEnd": "2026-12-20",
+    "peakUTC": "2026-12-14T14:00:00Z",
+    "radiant": { "ra": 112, "dec": 33 },
+    "zhr": 150,
+    "parent": { "zh": "小行星 3200 Phaethon", "en": "Asteroid 3200 Phaethon" },
+    "notes": {
+      "zh": "一年中最稳定可靠的流星雨，明亮流星多；宽峰持续 10 小时以上，2026 年几乎无月光干扰。",
+      "en": "The most reliable major shower with many bright meteors; broad peak lasts 10+ hours and 2026 is nearly moon-free."
+    },
+    "visibleFrom": {
+      "zh": "南北半球均可，北半球更佳",
+      "en": "Both hemispheres, better from the north"
+    }
+  },
+  {
+    "id": "ursids",
+    "names": { "zh": "小熊座流星雨", "en": "Ursids" },
+    "activeStart": "2026-12-17",
+    "activeEnd": "2026-12-26",
+    "peakUTC": "2026-12-22T22:00:00Z",
+    "radiant": { "ra": 217, "dec": 76 },
+    "zhr": 10,
+    "parent": { "zh": "8P/Tuttle 彗星", "en": "Comet 8P/Tuttle" },
+    "notes": {
+      "zh": "活动易波动，偶有爆发；2026 年极大前两天满月，月光干扰明显。",
+      "en": "Activity is variable with occasional outbursts; Full Moon two days before the 2026 peak causes strong interference."
+    },
+    "visibleFrom": {
+      "zh": "北半球（辐射点接近天北极）",
+      "en": "Northern hemisphere (radiant near the north celestial pole)"
+    }
+  }
+]

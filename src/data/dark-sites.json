@@ -1,0 +1,730 @@
+[
+  {
+    "id": "lapalma",
+    "names": { "zh": "拉帕尔马岛（加那利群岛）", "en": "La Palma (Canary Islands)" },
+    "lat": 28.684,
+    "lng": -17.884,
+    "bortleClass": 2,
+    "region": { "zh": "西班牙 · 大西洋", "en": "Spain · Atlantic" },
+    "tips": {
+      "zh": "海拔高、常处于云海之上；天文台周边住宿需提前预订，山路弯多。",
+      "en": "High altitude, often above the clouds; book accommodation near the observatory well in advance; winding roads."
+    },
+    "showerIds": ["all"]
+  },
+  {
+    "id": "teide",
+    "names": { "zh": "泰德峰（特内里费）", "en": "Teide (Tenerife)" },
+    "lat": 28.271,
+    "lng": -16.642,
+    "bortleClass": 2,
+    "region": { "zh": "西班牙 · 加那利群岛", "en": "Spain · Canary Islands" },
+    "tips": {
+      "zh": "火山公园内光害极低，需自驾并注意夜间道路管制。",
+      "en": "Very dark volcanic national park; self-drive needed and watch for night road restrictions."
+    },
+    "showerIds": ["all"]
+  },
+  {
+    "id": "maunakea",
+    "names": { "zh": "莫纳克亚游客中心（夏威夷）", "en": "Mauna Kea Visitor Center (Hawaii)" },
+    "lat": 19.759,
+    "lng": -155.456,
+    "bortleClass": 1,
+    "region": { "zh": "美国 · 夏威夷", "en": "USA · Hawaii" },
+    "tips": {
+      "zh": "游客中心海拔约 2800 米，免费开放；注意保暖和高原反应，山顶区域不对公众开放。",
+      "en": "The visitor center sits at ~2,800 m and is free; dress warmly, mind altitude, and the summit itself is restricted."
+    },
+    "showerIds": ["all"]
+  },
+  {
+    "id": "cherry-springs",
+    "names": { "zh": "樱桃泉暗夜公园（宾夕法尼亚）", "en": "Cherry Springs State Park (Pennsylvania)" },
+    "lat": 41.661,
+    "lng": -77.823,
+    "bortleClass": 2,
+    "region": { "zh": "美国 · 宾夕法尼亚州", "en": "USA · Pennsylvania" },
+    "tips": {
+      "zh": "北美著名暗夜公园，夏季银河与英仙座观测条件极佳；露营需预约。",
+      "en": "Famous US dark-sky park, superb for the Perseids and Milky Way in summer; camping requires reservations."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "flagstaff",
+    "names": { "zh": "弗拉格斯塔夫（亚利桑那）", "en": "Flagstaff (Arizona)" },
+    "lat": 35.198,
+    "lng": -111.651,
+    "bortleClass": 3,
+    "region": { "zh": "美国 · 亚利桑那州", "en": "USA · Arizona" },
+    "tips": {
+      "zh": "世界上第一个国际暗天城市，周边高原干燥少云，全年适合观星。",
+      "en": "The world's first International Dark Sky City; dry high-desert skies suit observing year-round."
+    },
+    "showerIds": ["all"]
+  },
+  {
+    "id": "ali-dark",
+    "names": { "zh": "阿里暗夜公园（西藏）", "en": "Ali Dark Sky Park (Tibet)" },
+    "lat": 32.5,
+    "lng": 80.1,
+    "bortleClass": 1,
+    "region": { "zh": "中国 · 西藏", "en": "China · Tibet" },
+    "tips": {
+      "zh": "世界海拔最高的暗夜保护区之一，干燥少云；需适应高反，冬季极寒，提前办好边防手续。",
+      "en": "One of the highest dark-sky reserves on Earth; dry and clear, but altitude, extreme winter cold, and border permits apply."
+    },
+    "showerIds": ["all"]
+  },
+  {
+    "id": "dunhuang",
+    "names": { "zh": "敦煌（甘肃）", "en": "Dunhuang (Gansu)" },
+    "lat": 40.142,
+    "lng": 94.662,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 甘肃", "en": "China · Gansu" },
+    "tips": {
+      "zh": "沙漠观星，晴天率高、视野开阔；昼夜温差大，注意防风沙保暖。",
+      "en": "Desert skies with high clear-sky rates and open horizons; large temperature swings, wind and sand require preparation."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "atacama",
+    "names": { "zh": "阿塔卡马沙漠（智利）", "en": "Atacama Desert (Chile)" },
+    "lat": -23.4,
+    "lng": -68.0,
+    "bortleClass": 1,
+    "region": { "zh": "智利 · 阿塔卡马", "en": "Chile · Atacama" },
+    "tips": {
+      "zh": "全球最干燥地区之一，南半球流星雨（宝瓶座 η、双子座等）首选；夜间寒冷。",
+      "en": "Among the driest places on Earth; top choice for southern showers (Eta Aquariids, Geminids); cold at night."
+    },
+    "showerIds": ["eta-aquariids", "s-delta-aquariids", "alpha-capricornids", "orionids", "geminids"]
+  },
+  {
+    "id": "namibrand",
+    "names": { "zh": "纳米布兰德（纳米比亚）", "en": "NamibRand (Namibia)" },
+    "lat": -24.9,
+    "lng": 16.2,
+    "bortleClass": 1,
+    "region": { "zh": "纳米比亚", "en": "Namibia" },
+    "tips": {
+      "zh": "认证暗空保护区，南半球冬季银河壮丽；住宿点较分散，需四驱车。",
+      "en": "Certified dark-sky reserve with a magnificent southern winter Milky Way; lodges are scattered and 4x4 helps."
+    },
+    "showerIds": ["eta-aquariids", "s-delta-aquariids", "alpha-capricornids", "orionids", "geminids"]
+  },
+  {
+    "id": "aoraki",
+    "names": { "zh": "库克山（新西兰）", "en": "Aoraki / Mt Cook (New Zealand)" },
+    "lat": -43.733,
+    "lng": 170.1,
+    "bortleClass": 2,
+    "region": { "zh": "新西兰 · 南岛", "en": "New Zealand · South Island" },
+    "tips": {
+      "zh": "南半球高纬暗空，天气多变，出发前务必确认云量预报。",
+      "en": "High-latitude southern dark skies but changeable weather; always check the cloud forecast first."
+    },
+    "showerIds": ["eta-aquariids", "s-delta-aquariids", "alpha-capricornids", "orionids", "geminids"]
+  },
+  {
+    "id": "apoliu",
+    "names": { "zh": "从化阿婆六村（广州）", "en": "Apoliu Village, Conghua (Guangzhou)" },
+    "lat": 23.74,
+    "lng": 113.79,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "广州北部山区，驾车约 1.5–2 小时，村里有民宿；东北方向视野开阔，适合看英仙座方向。",
+      "en": "Mountains north of Guangzhou, ~1.5–2 h drive with village guesthouses; open north-east horizon suits the Perseid radiant."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "xiyong",
+    "names": { "zh": "西涌 / 杨梅坑（深圳）", "en": "Xiyong / Yangmeikeng (Shenzhen)" },
+    "lat": 22.47,
+    "lng": 114.56,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "深圳天文台周边海滩，夜间人少；注意潮汐、安全与离场交通。",
+      "en": "Beaches near the Shenzhen Observatory, quiet at night; mind tides, safety, and getting out late."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "lianghua",
+    "names": { "zh": "梁化林场（惠州）", "en": "Lianghua Forest Farm (Huizhou)" },
+    "lat": 23.05,
+    "lng": 114.55,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "惠东山区林场，光害较低；进山道路较窄，夜晚驾车需谨慎。",
+      "en": "Forest hills in Huidong with lower light pollution; narrow mountain roads need careful night driving."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "saikung",
+    "names": { "zh": "西贡 / 麦理浩径（香港）", "en": "Sai Kung / MacLehose Trail (Hong Kong)" },
+    "lat": 22.39,
+    "lng": 114.34,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 香港", "en": "China · Hong Kong" },
+    "tips": {
+      "zh": "郊野公园内，部分路段公共交通可达；注意补给、野猪与手机信号。",
+      "en": "Country park with some public-transport access; plan supplies, be aware of wild boars and patchy signal."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "dinghushan",
+    "names": { "zh": "鼎湖山（肇庆）", "en": "Dinghu Mountain (Zhaoqing)" },
+    "lat": 23.18,
+    "lng": 112.53,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "离肇庆市区近，山顶视野好；注意景区开放时间与夜爬限制。",
+      "en": "Close to Zhaoqing with good summit views; check opening hours and night-access rules."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "hailingdao",
+    "names": { "zh": "海陵岛（阳江）", "en": "Hailing Island (Yangjiang)" },
+    "lat": 21.62,
+    "lng": 111.87,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "海岛东侧沙滩朝向大海视野开阔，适合看低角度辐射点；夏季注意台风。",
+      "en": "East-facing beaches open to the sea suit low-altitude radiants; watch for typhoons in summer."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "fengning",
+    "names": { "zh": "丰宁坝上草原（河北）", "en": "Fengning Bashang (Hebei)" },
+    "lat": 41.5,
+    "lng": 116.65,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 河北", "en": "China · Hebei" },
+    "tips": {
+      "zh": "距北京约 200 公里，草原视野开阔、光害低；夏季凉爽，注意防蚊与早晚温差。",
+      "en": "About 200 km from Beijing with open grassland skies; cool summers, mind mosquitoes and temperature swings."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "huitengxile",
+    "names": { "zh": "辉腾锡勒草原（内蒙古）", "en": "Huitengxile Grassland (Inner Mongolia)" },
+    "lat": 41.1,
+    "lng": 112.6,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 内蒙古", "en": "China · Inner Mongolia" },
+    "tips": {
+      "zh": "距北京约 400 公里，风电场草原开阔、晴天率高，是华北观星优选。",
+      "en": "About 400 km from Beijing; open windy grassland with high clear-sky rates — a top northern China option."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "wutaishan",
+    "names": { "zh": "五台山（山西）", "en": "Mount Wutai (Shanxi)" },
+    "lat": 39.0,
+    "lng": 113.6,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 山西", "en": "China · Shanxi" },
+    "tips": {
+      "zh": "台顶视野开阔、光害低，适合太原、北京方向出发；注意海拔与景区夜爬规定。",
+      "en": "Open summit views with low light pollution, reachable from Taiyuan or Beijing; mind altitude and night-access rules."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "tianhuangping",
+    "names": { "zh": "天荒坪（浙江）", "en": "Tianhuangping (Zhejiang)" },
+    "lat": 30.47,
+    "lng": 119.6,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 浙江", "en": "China · Zhejiang" },
+    "tips": {
+      "zh": "华东著名暗空点，距杭州、上海约 2–3 小时车程；山顶设有天文台，注意天气与旺季人流。",
+      "en": "A famous East China dark site, 2–3 h from Hangzhou or Shanghai; an observatory sits on the summit — check weather and crowds."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "ruoergai",
+    "names": { "zh": "若尔盖草原（四川）", "en": "Ruoergai Grassland (Sichuan)" },
+    "lat": 33.6,
+    "lng": 102.9,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 四川", "en": "China · Sichuan" },
+    "tips": {
+      "zh": "高原湿地草原，视野极开阔，距成都约 8 小时车程；海拔高需防高反。",
+      "en": "Vast highland wetland plains with enormous horizons, ~8 h from Chengdu; altitude precautions required."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "shangrila",
+    "names": { "zh": "香格里拉（云南）", "en": "Shangri-La (Yunnan)" },
+    "lat": 27.83,
+    "lng": 99.7,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 云南", "en": "China · Yunnan" },
+    "tips": {
+      "zh": "高原暗空、晴天率高，距昆明约 1 小时飞行或 8 小时车程；注意高反与保暖。",
+      "en": "High-altitude dark skies with high clear-sky rates; reachable from Kunming by a short flight — mind altitude and cold."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "huashan",
+    "names": { "zh": "华山（陕西）", "en": "Mount Hua (Shaanxi)" },
+    "lat": 34.49,
+    "lng": 110.08,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 陕西", "en": "China · Shaanxi" },
+    "tips": {
+      "zh": "距西安约 1.5 小时，山顶光害低、视野开阔；夜爬需注意安全与门票时段。",
+      "en": "About 1.5 h from Xi'an with dark, open summit views; night hiking needs safety care and ticket timing."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "shennongjia",
+    "names": { "zh": "神农架（湖北）", "en": "Shennongjia (Hubei)" },
+    "lat": 31.5,
+    "lng": 110.3,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 湖北", "en": "China · Hubei" },
+    "tips": {
+      "zh": "华中高山林区，光害低，距武汉约 5 小时车程；注意山路、天气与季节。",
+      "en": "High mountain forests of central China with low light pollution, ~5 h from Wuhan; mind mountain roads and weather."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "wugongshan",
+    "names": { "zh": "武功山（江西）", "en": "Mount Wugong (Jiangxi)" },
+    "lat": 27.46,
+    "lng": 114.16,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 江西", "en": "China · Jiangxi" },
+    "tips": {
+      "zh": "高山草甸视野开阔，适合长沙、南昌方向出发；山顶风大，注意保暖。",
+      "en": "Alpine meadows with wide horizons, good for trips from Changsha or Nanchang; windy summit, dress warmly."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "taishan",
+    "names": { "zh": "泰山（山东）", "en": "Mount Tai (Shandong)" },
+    "lat": 36.25,
+    "lng": 117.1,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 山东", "en": "China · Shandong" },
+    "tips": {
+      "zh": "距济南约 1 小时，山顶光害低；夜爬须按景区规定，提前查开放时段。",
+      "en": "About 1 h from Jinan with a dark summit; night hiking follows park rules — check opening times first."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "shapotou",
+    "names": { "zh": "沙坡头（宁夏）", "en": "Shapotou (Ningxia)" },
+    "lat": 37.5,
+    "lng": 105.0,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 宁夏", "en": "China · Ningxia" },
+    "tips": {
+      "zh": "腾格里沙漠边缘，干燥少云、晴天率高；注意风沙与昼夜温差。",
+      "en": "Edge of the Tengger Desert — dry, clear and high clear-sky rates; mind sand, wind and temperature swings."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "chaka",
+    "names": { "zh": "茶卡盐湖（青海）", "en": "Chaka Salt Lake (Qinghai)" },
+    "lat": 36.7,
+    "lng": 99.1,
+    "bortleClass": 2,
+    "region": { "zh": "中国 · 青海", "en": "China · Qinghai" },
+    "tips": {
+      "zh": "“天空之镜”盐湖暗空极佳，距西宁约 2.5 小时；注意保暖与高反。",
+      "en": "The mirror-salt-lake dark site is superb, ~2.5 h from Xining; dress warmly and mind altitude."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "tianshan-south",
+    "names": { "zh": "乌鲁木齐南山（新疆）", "en": "Urumqi South Mountain (Xinjiang)" },
+    "lat": 43.3,
+    "lng": 87.1,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 新疆", "en": "China · Xinjiang" },
+    "tips": {
+      "zh": "距乌鲁木齐约 1 小时，夏季凉爽、晴天率高；山区夜间驾车注意安全。",
+      "en": "About 1 h from Urumqi; cool summers and high clear-sky rates — drive mountain roads carefully at night."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "yangzhuo",
+    "names": { "zh": "羊卓雍措（西藏）", "en": "Yamdrok Lake (Tibet)" },
+    "lat": 29.0,
+    "lng": 90.7,
+    "bortleClass": 2,
+    "region": { "zh": "中国 · 西藏", "en": "China · Tibet" },
+    "tips": {
+      "zh": "距拉萨约 2 小时，海拔高、光害极低；注意高反、保暖与边防手续。",
+      "en": "About 2 h from Lhasa at high altitude with pristine skies; mind altitude, cold and permit requirements."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "maoershan",
+    "names": { "zh": "猫儿山（广西）", "en": "Mount Mao'er (Guangxi)" },
+    "lat": 25.9,
+    "lng": 110.4,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 广西", "en": "China · Guangxi" },
+    "tips": {
+      "zh": "华南最高峰之一，常处于云海之上；登山需提前预约，注意山路。",
+      "en": "One of South China's highest peaks, often above the clouds; book access in advance and mind mountain roads."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "wuzhishan",
+    "names": { "zh": "五指山（海南）", "en": "Wuzhi Mountain (Hainan)" },
+    "lat": 18.8,
+    "lng": 109.7,
+    "bortleClass": 3,
+    "region": { "zh": "中国 · 海南", "en": "China · Hainan" },
+    "tips": {
+      "zh": "热带雨林山区，海拔高、光害低，距海口约 3 小时；雨季注意天气。",
+      "en": "Tropical forest mountains with altitude and dark skies, ~3 h from Haikou; watch the wet season."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "hehuanshan",
+    "names": { "zh": "合欢山（台湾）", "en": "Hehuan Mountain (Taiwan)" },
+    "lat": 24.14,
+    "lng": 121.28,
+    "bortleClass": 2,
+    "region": { "zh": "中国 · 台湾", "en": "China · Taiwan" },
+    "tips": {
+      "zh": "台湾最佳观星点之一，距台北约 3 小时；注意高山路况、保暖与住宿预约。",
+      "en": "One of Taiwan's best stargazing sites, ~3 h from Taipei; mind mountain roads, cold and accommodation bookings."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "fuji",
+    "names": { "zh": "富士山麓（日本）", "en": "Mt Fuji foothills (Japan)" },
+    "lat": 35.36,
+    "lng": 138.73,
+    "bortleClass": 3,
+    "region": { "zh": "日本", "en": "Japan" },
+    "tips": {
+      "zh": "距东京约 1.5 小时，视野开阔、光害较低；冬季寒冷，注意保暖。",
+      "en": "About 1.5 h from Tokyo with open, relatively dark skies; cold in winter, dress warmly."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "kielder",
+    "names": { "zh": "基尔德暗夜公园（英国）", "en": "Kielder Observatory (UK)" },
+    "lat": 55.23,
+    "lng": -2.55,
+    "bortleClass": 2,
+    "region": { "zh": "英国", "en": "UK" },
+    "tips": {
+      "zh": "欧洲最大的暗夜公园之一，距伦敦约 5 小时车程；云图是出发前必查项。",
+      "en": "One of Europe's largest dark-sky parks, ~5 h from London; check the cloud map before leaving."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "joshua",
+    "names": { "zh": "约书亚树国家公园（美国）", "en": "Joshua Tree National Park (USA)" },
+    "lat": 34.0,
+    "lng": -116.2,
+    "bortleClass": 3,
+    "region": { "zh": "美国", "en": "USA" },
+    "tips": {
+      "zh": "距洛杉矶约 2.5 小时，沙漠暗空、晴天率高；夜间注意寒冷与野生动物。",
+      "en": "About 2.5 h from Los Angeles with desert-dark skies and high clear-sky rates; cold nights and wildlife."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "yosemite",
+    "names": { "zh": "优胜美地国家公园（美国）", "en": "Yosemite National Park (USA)" },
+    "lat": 37.85,
+    "lng": -119.56,
+    "bortleClass": 3,
+    "region": { "zh": "美国", "en": "USA" },
+    "tips": {
+      "zh": "距旧金山约 3 小时，山谷暗空、银河壮丽；住宿需提前预订。",
+      "en": "About 3 h from San Francisco with dark valley skies and a stunning Milky Way; book lodging early."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "sorak",
+    "names": { "zh": "雪岳山（韩国）", "en": "Seoraksan (South Korea)" },
+    "lat": 38.1,
+    "lng": 128.5,
+    "bortleClass": 3,
+    "region": { "zh": "韩国", "en": "South Korea" },
+    "tips": {
+      "zh": "距首尔约 2.5 小时，山岳暗空、空气通透；注意冬季严寒。",
+      "en": "About 2.5 h from Seoul with mountain-dark skies and crisp air; winter can be severe."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  },
+  {
+    "id": "mersing",
+    "names": { "zh": "丰盛港（马来西亚）", "en": "Mersing (Malaysia)" },
+    "lat": 2.43,
+    "lng": 103.84,
+    "bortleClass": 3,
+    "region": { "zh": "马来西亚", "en": "Malaysia" },
+    "tips": {
+      "zh": "距新加坡约 2 小时，东海岸暗空较好；留意季风与雨季。",
+      "en": "About 2 h from Singapore with the darker skies of the east coast; watch the monsoon season."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "khaoyai",
+    "names": { "zh": "考艾国家公园（泰国）", "en": "Khao Yai National Park (Thailand)" },
+    "lat": 14.44,
+    "lng": 101.37,
+    "bortleClass": 3,
+    "region": { "zh": "泰国", "en": "Thailand" },
+    "tips": {
+      "zh": "距曼谷约 2.5 小时，国家公园暗空、视野开阔；旱季出发最佳。",
+      "en": "About 2.5 h from Bangkok with park-dark skies and open views; the dry season is best."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "bluemountains",
+    "names": { "zh": "蓝山（澳大利亚）", "en": "Blue Mountains (Australia)" },
+    "lat": 33.7,
+    "lng": 150.3,
+    "bortleClass": 4,
+    "region": { "zh": "澳大利亚", "en": "Australia" },
+    "tips": {
+      "zh": "距悉尼约 1.5 小时，内陆山区视野好、光害低；注意山路与野火季。",
+      "en": "About 1.5 h from Sydney with open inland horizons and lower light pollution; mind mountain roads and bushfire season."
+    },
+    "showerIds": ["eta-aquariids", "s-delta-aquariids", "alpha-capricornids", "orionids", "geminids"]
+  },
+  {
+    "id": "liwa",
+    "names": { "zh": "利瓦沙漠（阿联酋）", "en": "Liwa Oasis (UAE)" },
+    "lat": 23.9,
+    "lng": 53.7,
+    "bortleClass": 2,
+    "region": { "zh": "阿联酋", "en": "UAE" },
+    "tips": {
+      "zh": "距迪拜约 2.5 小时，沙漠暗空、晴天率极高；注意沙尘与昼夜温差。",
+      "en": "About 2.5 h from Dubai with desert-dark skies and exceptional clear-sky rates; mind dust and temperature swings."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "maofengshan",
+    "names": { "zh": "帽峰山（广州）", "en": "Maofeng Mountain (Guangzhou)" },
+    "lat": 23.28,
+    "lng": 113.4,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "市区北部约 30 分钟车程，比市中心明显更暗；山顶视野开阔，可看北偏东方向。",
+      "en": "About 30 min north of downtown and noticeably darker; open summit views toward the north-east."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "maluanshan",
+    "names": { "zh": "马峦山（深圳）", "en": "Maluan Mountain (Shenzhen)" },
+    "lat": 22.66,
+    "lng": 114.34,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 粤港澳大湾区", "en": "China · Greater Bay Area" },
+    "tips": {
+      "zh": "距市中心约 40 分钟，郊野公园内光害较低；需自带饮水补给，注意蚊虫。",
+      "en": "About 40 min from downtown inside a country park with lower light pollution; bring water and repellent."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "xiangshan",
+    "names": { "zh": "香山 / 西山（北京）", "en": "Fragrant Hills / West Hills (Beijing)" },
+    "lat": 39.99,
+    "lng": 116.18,
+    "bortleClass": 6,
+    "region": { "zh": "中国 · 北京", "en": "China · Beijing" },
+    "tips": {
+      "zh": "市区西郊，比市中心略暗；夜间登山注意园区开放时间与安全。",
+      "en": "West of downtown and a bit darker; night visits depend on park hours and require care."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "nanhui",
+    "names": { "zh": "南汇嘴观海公园（上海）", "en": "Nanhuizui Seaview Park (Shanghai)" },
+    "lat": 30.9,
+    "lng": 121.9,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 上海", "en": "China · Shanghai" },
+    "tips": {
+      "zh": "临港东南角，面海视野开阔，比市区暗一档；注意海风、保暖与离场交通。",
+      "en": "South-east Lingang with open sea horizons and slightly darker skies; mind sea winds and getting back late."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "wuchaoshan",
+    "names": { "zh": "午潮山（杭州）", "en": "Wuchao Mountain (Hangzhou)" },
+    "lat": 30.21,
+    "lng": 120.05,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 浙江", "en": "China · Zhejiang" },
+    "tips": {
+      "zh": "市区西南郊野公园，约 30 分钟可达；山脊视野好，注意天黑后下山安全。",
+      "en": "A country park south-west of downtown, ~30 min away; good ridge views, mind the descent after dark."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "longquanshan",
+    "names": { "zh": "龙泉山城市森林公园（成都）", "en": "Longquan Mountain Forest Park (Chengdu)" },
+    "lat": 30.55,
+    "lng": 104.42,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 四川", "en": "China · Sichuan" },
+    "tips": {
+      "zh": "市区东侧森林公园，约 1 小时可达；海拔不高，适合就近练手。",
+      "en": "A forest park east of the city, ~1 h away at modest altitude — a good close-to-home option."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "jiufeng",
+    "names": { "zh": "九峰山（武汉）", "en": "Jiufeng Mountain (Wuhan)" },
+    "lat": 30.5,
+    "lng": 114.48,
+    "bortleClass": 6,
+    "region": { "zh": "中国 · 湖北", "en": "China · Hubei" },
+    "tips": {
+      "zh": "光谷东侧山体，比市中心略暗；适合快速就近观测。",
+      "en": "Hills east of Optics Valley, slightly darker than downtown — handy for a quick session."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "lishan",
+    "names": { "zh": "骊山（西安）", "en": "Lishan (Xi'an)" },
+    "lat": 34.36,
+    "lng": 109.21,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 陕西", "en": "China · Shaanxi" },
+    "tips": {
+      "zh": "临潼骊山，距市中心约 40 分钟；山顶视野开阔，夜爬注意安全。",
+      "en": "Lishan in Lintong, ~40 min from downtown with open summit views; night hiking needs care."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "zijinshan",
+    "names": { "zh": "紫金山（南京）", "en": "Purple Mountain (Nanjing)" },
+    "lat": 32.07,
+    "lng": 118.83,
+    "bortleClass": 6,
+    "region": { "zh": "中国 · 江苏", "en": "China · Jiangsu" },
+    "tips": {
+      "zh": "市区高地，比市中心略暗；避开天文台灯光区域，选择开阔处。",
+      "en": "High ground in the city, a bit darker than downtown; avoid observatory lights and pick an open spot."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "nanshan-cq",
+    "names": { "zh": "南山（重庆）", "en": "Nanshan (Chongqing)" },
+    "lat": 29.57,
+    "lng": 106.62,
+    "bortleClass": 6,
+    "region": { "zh": "中国 · 重庆", "en": "China · Chongqing" },
+    "tips": {
+      "zh": "南岸高地，比两江核心区略暗；雾季可见度低，选晴天出发。",
+      "en": "High ground on the south bank, darker than the core districts; foggy season hurts visibility — go on clear days."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "taimoshan",
+    "names": { "zh": "大帽山（香港）", "en": "Tai Mo Shan (Hong Kong)" },
+    "lat": 22.41,
+    "lng": 114.12,
+    "bortleClass": 5,
+    "region": { "zh": "中国 · 香港", "en": "China · Hong Kong" },
+    "tips": {
+      "zh": "全港最高峰，麦理浩径可至；注意山顶天气突变与离场交通。",
+      "en": "Hong Kong's highest peak, reachable via the MacLehose Trail; watch for sudden summit weather and late transport."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "yangmingshan",
+    "names": { "zh": "阳明山（台北）", "en": "Yangmingshan (Taipei)" },
+    "lat": 25.17,
+    "lng": 121.53,
+    "bortleClass": 4,
+    "region": { "zh": "中国 · 台湾", "en": "China · Taiwan" },
+    "tips": {
+      "zh": "市区北郊，硫磺谷一带光害低、视野好；夜间注意硫磺气味与保暖。",
+      "en": "North of the city with darker skies around the sulfur valley; mind the smell and night-time cold."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "takaosan",
+    "names": { "zh": "高尾山（东京）", "en": "Mount Takao (Tokyo)" },
+    "lat": 35.63,
+    "lng": 139.25,
+    "bortleClass": 5,
+    "region": { "zh": "日本", "en": "Japan" },
+    "tips": {
+      "zh": "东京近郊，缆车可达，冬季晴朗夜多；注意末班车时间。",
+      "en": "Tokyo's nearest mountain, cable-car accessible, with many clear winter nights; watch the last train."
+    },
+    "showerIds": []
+  },
+  {
+    "id": "brecon",
+    "names": { "zh": "布雷肯比肯斯（英国威尔士）", "en": "Brecon Beacons (Wales)" },
+    "lat": 51.95,
+    "lng": -3.42,
+    "bortleClass": 2,
+    "region": { "zh": "英国", "en": "UK" },
+    "tips": {
+      "zh": "国际暗空保护区，距伦敦约 3 小时车程；英国境内少有的真正暗空。",
+      "en": "An International Dark Sky Reserve about 3 h from London — rare truly dark skies in the UK."
+    },
+    "showerIds": ["quadrantids", "lyrids", "perseids", "orionids", "leonids", "geminids", "ursids"]
+  }
+]
