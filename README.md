@@ -47,7 +47,7 @@ Cloudflare Pages 会自动使用 `public/_redirects` 中的 SPA fallback 配置�
 
 Netlify 配置仍保留，便于迁移验证期间回滚；自定义域名和 DNS 需要在 Cloudflare Pages 验证完成后再单独切换。
 
-GitHub Pages 需额外使用 `public/404.html` 回退。
+GitHub Pages 需要额外配置等价的 `404.html` 回退；当前发布目标为 Cloudflare Pages，其默认 SPA fallback 会将未匹配的导航路径交给 `/index.html`。
 
 ## 安全说明
 
