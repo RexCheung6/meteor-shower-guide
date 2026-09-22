@@ -1249,3 +1249,18 @@ input[type="search"] {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .mobile-nav {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .mobile-nav .nav-link:nth-child(6),
+  .mobile-nav .nav-link:nth-child(7) {
+    display: none;
+  }
+
+  .mobile-nav .nav-link {
+    font-size: 0.68rem;
+  }
+}
