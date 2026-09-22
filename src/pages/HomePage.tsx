@@ -6,6 +6,7 @@ import Countdown from "../components/Countdown";
 import { formatDateTime, moonIlluminatedFraction } from "../lib/astro";
 import type { Shower } from "../types";
 import { localizedName, type Locale } from "../lib/locale";
+import ObservationScoreCard from "../components/ObservationScoreCard";
 
 const DAY_MS = 86400000;
 const showers = showersData as Shower[];
@@ -114,6 +115,7 @@ export default function HomePage() {
           </dl>
         </section>
       )}
+      <ObservationScoreCard />
       {!next && (
         <section className="card">
           <p className="muted">{t("home.noUpcoming")}</p>

@@ -40,7 +40,18 @@ export default {
     moonLow: "Slight moonlight",
     moonMid: "Moderate moonlight",
     moonHigh: "Strong moonlight",
-    banner: "{{name}} is active now! Check the best observing window and cloud forecast for your location."
+    banner: "{{name}} is active now! Check the best observing window and cloud forecast for your location.",
+    observationEyebrow: "Tonight's outlook",
+    observationTitle: "Is tonight worth observing?",
+    observationBasedOn: "Based on {{location}} and the {{shower}} radiant",
+    observationCloud: "Cloud",
+    observationMoon: "Moonlight",
+    observationRadiant: "Radiant altitude",
+    observationWindow: "Best window",
+    observationUpdated: "Weather data connected",
+    observationWeatherUnavailable: "Weather unavailable; using a conservative estimate",
+    observationDetails: "View full forecast",
+    observationVerdict: { good: "Worth going — plan your session", mid: "Possible — recheck before leaving", bad: "Mixed conditions — try another time or place" }
   },
   shower: {
     activePeriod: "Active period",

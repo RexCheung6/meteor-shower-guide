@@ -40,7 +40,18 @@ export default {
     moonLow: "月光轻微",
     moonMid: "月光中等",
     moonHigh: "月光严重",
-    banner: "{{name}}正处于活跃期！查看你所在位置的最佳观测窗口和云量预报。"
+    banner: "{{name}}正处于活跃期！查看你所在位置的最佳观测窗口和云量预报。",
+    observationEyebrow: "今晚观测评估",
+    observationTitle: "今晚适合观测吗？",
+    observationBasedOn: "基于 {{location}} 与 {{shower}} 辐射点条件",
+    observationCloud: "云量",
+    observationMoon: "月照率",
+    observationRadiant: "辐射点高度",
+    observationWindow: "推荐窗口",
+    observationUpdated: "天气数据已接入",
+    observationWeatherUnavailable: "天气暂不可用，已使用保守估算",
+    observationDetails: "查看详细天气",
+    observationVerdict: { good: "值得出发，优先安排观测", mid: "可以尝试，建议临近出发再确认", bad: "条件一般，建议换时间或地点" }
   },
   shower: {
     activePeriod: "活跃期",

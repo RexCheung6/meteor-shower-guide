@@ -285,6 +285,63 @@ button {
   font-size: 0.95rem;
 }
 
+.observation-card {
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  background: linear-gradient(135deg, #182743 0%, #141e36 100%);
+}
+
+.observation-card.score-good { border-color: rgba(72, 187, 120, 0.65); }
+.observation-card.score-mid { border-color: rgba(232, 163, 61, 0.65); }
+.observation-card.score-bad { border-color: rgba(224, 91, 77, 0.65); }
+
+.observation-card-main,
+.observation-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.observation-card h2 { margin: 3px 0 2px; }
+.observation-card p { margin-top: 0; }
+
+.observation-score {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.observation-score strong { font-size: 2.5rem; line-height: 1; }
+.observation-score span { color: var(--muted); }
+.score-good .observation-score strong, .score-good .observation-verdict { color: var(--good); }
+.score-mid .observation-score strong, .score-mid .observation-verdict { color: var(--mid); }
+.score-bad .observation-score strong, .score-bad .observation-verdict { color: var(--bad); }
+
+.observation-verdict { margin: 12px 0; font-weight: 700; }
+
+.observation-factors {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.observation-factors div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 11px;
+  background: rgba(11, 16, 32, 0.45);
+  border-radius: 9px;
+}
+
+.observation-factors span { color: var(--muted); font-size: 0.78rem; }
+.observation-factors strong { font-size: 0.95rem; }
+.observation-card-footer { font-size: 0.82rem; }
+
 h1,
 h2,
 h3 {
@@ -939,6 +996,28 @@ input[type="search"] {
   .hero-stats {
     min-width: 0;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .observation-card-main,
+  .observation-card-footer {
+    align-items: flex-start;
+  }
+
+  .observation-card-main {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .observation-score strong {
+    font-size: 2.1rem;
+  }
+
+  .observation-factors {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .observation-card-footer {
+    flex-direction: column;
   }
 
   .map-wrap {
