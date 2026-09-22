@@ -22,7 +22,10 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at 15% -10%, rgba(57, 80, 126, 0.28), transparent 34rem),
+    radial-gradient(circle at 90% 8%, rgba(111, 168, 220, 0.1), transparent 28rem),
+    var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
@@ -84,6 +87,10 @@ a:hover {
   flex: 1;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .nav-link {
   padding: 6px 12px;
   border-radius: 8px;
@@ -104,6 +111,14 @@ a:hover {
 button {
   font: inherit;
   cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+button:active { transform: translateY(1px); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .lang-toggle,
@@ -147,7 +162,7 @@ button {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 20px 16px 40px;
+  padding: 28px 16px 48px;
 }
 
 .site-footer {
@@ -172,7 +187,7 @@ button {
 
 .hero {
   text-align: center;
-  padding: 44px 16px 30px;
+  padding: 54px 16px 38px;
   position: relative;
   overflow: hidden;
 }
@@ -221,7 +236,8 @@ button {
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
-  padding: 18px 20px;
+  padding: 22px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .hero-card {
@@ -394,7 +410,7 @@ h3 {
 .data-table th,
 .data-table td {
   text-align: left;
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-bottom: 1px solid var(--card-border);
   vertical-align: top;
 }
@@ -1165,13 +1181,7 @@ input[type="search"] {
     padding-bottom: 82px;
   }
 
-  .main-nav {
-    grid-template-columns: repeat(7, 1fr);
-  }
-
-  .nav-link {
-    font-size: 0.64rem;
-  }
+  .main-nav { display: none; }
 
   .detail-title-row,
   .observation-mode-head {
@@ -1201,14 +1211,14 @@ input[type="search"] {
     grid-column: 1 / -1;
   }
 
-  .main-nav {
+  .mobile-nav {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 30;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(7, minmax(0, 1fr));
     gap: 0;
     padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
     background: rgba(11, 16, 32, 0.97);
@@ -1216,7 +1226,7 @@ input[type="search"] {
     box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-link {
+  .mobile-nav .nav-link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1225,7 +1235,7 @@ input[type="search"] {
     font-size: 0.72rem;
   }
 
-  .nav-icon {
+  .mobile-nav .nav-icon {
     display: block;
     font-size: 1.05rem;
     line-height: 1.1;

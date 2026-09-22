@@ -63,6 +63,14 @@ export default function Layout() {
           </button>
         </div>
       </header>
+      <nav className="mobile-nav" aria-label="mobile">
+        {navItems.map((item) => (
+          <NavLink key={item.to} to={item.to} end={item.end} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
+            <span className="nav-icon" aria-hidden="true">{item.icon}</span>
+            <span>{item.label}</span>
+          </NavLink>
+        ))}
+      </nav>
       <main className="site-main">
         <Outlet />
       </main>
