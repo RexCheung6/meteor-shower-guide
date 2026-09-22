@@ -15,7 +15,9 @@ export default function Layout() {
     { to: `/${current}`, label: t("common.home"), icon: "⌂", end: true },
     { to: `/${current}/map`, label: t("common.visibilityMap"), icon: "✦", end: false },
     { to: `/${current}/weather`, label: t("common.weather"), icon: "☁", end: false },
-    { to: `/${current}/tips`, label: t("common.tips"), icon: "✧", end: false }
+    { to: `/${current}/tips`, label: t("common.tips"), icon: "✧", end: false },
+    { to: `/${current}/favorites`, label: t("common.favorites"), icon: "★", end: false },
+    { to: `/${current}/compare`, label: t("common.compare"), icon: "⇄", end: false }
   ];
 
   const switchLocale = () => {

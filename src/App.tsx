@@ -9,6 +9,9 @@ import MapPage from "./pages/MapPage";
 import WeatherPage from "./pages/WeatherPage";
 import TipsPage from "./pages/TipsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import FavoritesPage from "./pages/FavoritesPage";
+import ObservationModePage from "./pages/ObservationModePage";
+import ComparePage from "./pages/ComparePage";
 import { isLoggedIn } from "./auth";
 import { getSavedLocale, SUPPORTED_LOCALES, type Locale } from "./lib/locale";
 import { LocationProvider } from "./context/LocationContext";
@@ -39,6 +42,9 @@ export default function App() {
             <Route path="weather" element={<WeatherPage />} />
             <Route path="weather/:place" element={<WeatherPage />} />
             <Route path="tips" element={<TipsPage />} />
+            <Route path="favorites" element={<FavoritesPage />} />
+            <Route path="observe" element={<ObservationModePage />} />
+            <Route path="compare" element={<ComparePage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
           <Route path="*" element={<Navigate to={`/${getSavedLocale()}`} replace />} />

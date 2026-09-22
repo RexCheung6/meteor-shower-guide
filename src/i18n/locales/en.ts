@@ -6,6 +6,11 @@ export default {
     visibilityMap: "Visibility Map",
     weather: "Cloud & Weather",
     tips: "Viewing Tips",
+    favorites: "Favorites",
+    compare: "Compare sites",
+    viewFavorites: "View favorites",
+    addFavorite: "Save",
+    removeFavorite: "Saved",
     logout: "Log out",
     loading: "Loading…",
     error: "Something went wrong, please try again",
@@ -272,5 +277,39 @@ export default {
     shortPassword: "Password must be at least 6 characters",
     welcome: "Welcome to the Meteor Shower Guide",
     backHome: "Back"
+  },
+  favorites: {
+    title: "My favorites",
+    subtitle: "Saved in this browser so you can quickly return to showers and observing sites you like.",
+    showers: "Saved showers",
+    sites: "Saved sites",
+    emptyShowers: "No showers saved yet. Open a shower guide to save one.",
+    emptySites: "No sites saved yet. Save one from the map or tips page."
+  },
+  calendar: {
+    addToCalendar: "Add to calendar",
+    eventSuffix: "observing",
+    description: "Best meteor-shower observing window. Observing location: "
+  },
+  observationMode: {
+    eyebrow: "Outdoor observing mode",
+    open: "Open observing mode",
+    backDetails: "Back to guide",
+    bestWindow: "Best observing window",
+    radiant: "Radiant altitude",
+    moon: "Moonlight",
+    expected: "Expected meteors/hour",
+    checklistTitle: "Before you leave",
+    checklist: ["Arrive 20–30 minutes early so your eyes can dark-adapt.", "Dim your phone and use red light mode when possible.", "Bring warm layers, a reclining chair or mat, and a power bank.", "Check return transport and changing weather; avoid unsafe areas."]
+  },
+  compare: {
+    title: "Compare observing sites",
+    subtitle: "Compare light pollution, distance and site notes side by side before heading out.",
+    search: "Search observing sites",
+    noMatch: "No matching site",
+    bortle: "Light pollution",
+    distance: "Distance from you",
+    coordinates: "Coordinates",
+    open: "Compare sites"
   }
 };

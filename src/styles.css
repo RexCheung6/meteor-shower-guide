@@ -754,6 +754,92 @@ input[type="search"] {
   gap: 8px;
 }
 
+.site-card-badges,
+.detail-title-row,
+.detail-actions,
+.home-shortcuts {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.detail-title-row {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.detail-title-row h1 { margin-bottom: 0; }
+
+.favorite-button {
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 4px 9px;
+  background: var(--bg-soft);
+  color: var(--muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.favorite-button.active {
+  color: var(--accent);
+  border-color: rgba(255, 209, 102, 0.55);
+  background: rgba(255, 209, 102, 0.1);
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.favorite-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: var(--bg-soft);
+}
+
+.observation-mode {
+  min-height: calc(100vh - 170px);
+}
+
+.observation-mode-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px 6px 8px;
+}
+
+.observation-mode-head h1 { margin-bottom: 4px; }
+
+.observation-mode-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 10px;
+}
+
+.observation-mode-primary,
+.mode-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 140px;
+  padding: 18px;
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #182743 0%, #141e36 100%);
+}
+
+.observation-mode-primary strong { margin: 7px 0; font-size: clamp(1.5rem, 4vw, 2.4rem); color: var(--accent); }
+.mode-label, .mode-stat span { color: var(--muted); font-size: 0.82rem; }
+.mode-stat strong { margin-top: 8px; font-size: 1.5rem; }
+.mode-checklist { max-width: 760px; margin: 0 auto; width: 100%; }
+
 .site-actions {
   display: flex;
   gap: 8px;
@@ -1050,6 +1136,31 @@ input[type="search"] {
 
   .site-footer {
     padding-bottom: 82px;
+  }
+
+  .main-nav {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-link {
+    font-size: 0.64rem;
+  }
+
+  .detail-title-row,
+  .observation-mode-head {
+    flex-direction: column;
+  }
+
+  .detail-actions {
+    width: 100%;
+  }
+
+  .observation-mode-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .observation-mode-primary {
+    grid-column: 1 / -1;
   }
 
   .main-nav {

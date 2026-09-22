@@ -18,6 +18,7 @@ import {
 } from "../lib/cityAdvice";
 import { useLocation } from "../context/LocationContext";
 import SearchableSelect, { type SelectOption } from "../components/SearchableSelect";
+import FavoriteButton from "../components/FavoriteButton";
 
 const darkSites = darkSitesData as DarkSite[];
 
@@ -120,7 +121,7 @@ export default function TipsPage() {
     <div className="site-card" key={site.id}>
       <div className="site-card-head">
         <h3>{localizedName(site.names, current)}</h3>
-        {longHaul ? <span className="bortle-badge long-haul-badge">{t("tips.longHaul")}</span> : <span className="bortle-badge">Bortle {site.bortleClass}</span>}
+        <div className="site-card-badges">{longHaul ? <span className="bortle-badge long-haul-badge">{t("tips.longHaul")}</span> : <span className="bortle-badge">Bortle {site.bortleClass}</span>}<FavoriteButton type="sites" id={site.id} /></div>
       </div>
       <p className="muted">
         {t("tips.distanceKm", { km: distanceKm })} · {localizedName(site.region, current)}
@@ -214,6 +215,7 @@ export default function TipsPage() {
 
       <section className="card">
         <h2>{t("tips.citySitesTitle")}</h2>
+        <p><button type="button" className="btn-small" onClick={() => navigate(`/${current}/compare`)}>{t("compare.open")}</button></p>
         <p className="muted">{t("tips.citySitesSub")}</p>
         {citySites.length > 0 ? (
           <div className="site-grid">{citySites.map(({ site, distanceKm }) => renderSiteCard(site, distanceKm, false))}</div>

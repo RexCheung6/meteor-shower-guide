@@ -6,6 +6,11 @@ export default {
     visibilityMap: "可见性地图",
     weather: "天气云量",
     tips: "观星技巧",
+    favorites: "我的收藏",
+    compare: "对比观测点",
+    viewFavorites: "查看我的收藏",
+    addFavorite: "收藏",
+    removeFavorite: "已收藏",
     logout: "退出登录",
     loading: "加载中…",
     error: "出错了，请稍后重试",
@@ -272,5 +277,39 @@ export default {
     shortPassword: "密码至少 6 位",
     welcome: "欢迎使用流星雨观测指南",
     backHome: "返回"
+  },
+  favorites: {
+    title: "我的收藏",
+    subtitle: "收藏保存在当前浏览器中，方便快速回到喜欢的流星雨和观测点。",
+    showers: "收藏的流星雨",
+    sites: "收藏的观测点",
+    emptyShowers: "还没有收藏流星雨。打开详情页即可收藏。",
+    emptySites: "还没有收藏观测点。地图或技巧页中可以收藏。"
+  },
+  calendar: {
+    addToCalendar: "加入日历",
+    eventSuffix: "观测",
+    description: "流星雨最佳观测时段，观测地点："
+  },
+  observationMode: {
+    eyebrow: "户外观测模式",
+    open: "进入观测模式",
+    backDetails: "返回详情",
+    bestWindow: "最佳观测窗口",
+    radiant: "辐射点高度",
+    moon: "月照率",
+    expected: "预计流星数/小时",
+    checklistTitle: "出发前检查",
+    checklist: ["提前 20–30 分钟到场，让眼睛完成暗适应。", "手机调低亮度，优先使用红光模式。", "带上保暖衣物、躺椅或防潮垫和充电宝。", "确认返程交通与天气变化，不要在危险区域停留。"]
+  },
+  compare: {
+    title: "观测点对比",
+    subtitle: "并排比较光害等级、距离和地点提示，选择更适合今晚出发的点。",
+    search: "搜索观测点",
+    noMatch: "无匹配观测点",
+    bortle: "光害等级",
+    distance: "距当前位置",
+    coordinates: "坐标",
+    open: "对比观测点"
   }
 };

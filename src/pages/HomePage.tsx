@@ -193,6 +193,11 @@ export default function HomePage() {
         </section>
       )}
       <ObservationScoreCard />
+      <div className="home-shortcuts">
+        <Link className="btn-small" to={`/${current}/favorites`}>{t("common.viewFavorites")}</Link>
+        <Link className="btn-small" to={`/${current}/observe`}>{t("observationMode.open")}</Link>
+        <Link className="btn-small" to={`/${current}/compare`}>{t("compare.open")}</Link>
+      </div>
       {!next && (
         <section className="card">
           <p className="muted">{t("home.noUpcoming")}</p>

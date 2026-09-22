@@ -11,6 +11,8 @@ import { climateKeyFor, hemisphereOf, isGbaLocation, latBandKey, nearestDarkSite
 import { useLocation } from "../context/LocationContext";
 import RateChart from "../components/RateChart";
 import SearchableSelect from "../components/SearchableSelect";
+import FavoriteButton from "../components/FavoriteButton";
+import { downloadICS } from "../lib/calendar";
 
 const MeteorMap = lazy(() => import("../components/MeteorMap"));
 const showers = showersData as Shower[];
@@ -118,7 +120,7 @@ export default function ShowerDetailPage() {
     <div className="site-card" key={site.id}>
       <div className="site-card-head">
         <h3>{localizedName(site.names, current)}</h3>
-        <span className="bortle-badge">Bortle {site.bortleClass}</span>
+        <div className="site-card-badges"><span className="bortle-badge">Bortle {site.bortleClass}</span><FavoriteButton type="sites" id={site.id} /></div>
       </div>
       <p className="muted">{localizedName(site.region, current)}</p>
       <p>{localizedName(site.tips, current)}</p>
@@ -141,7 +143,7 @@ export default function ShowerDetailPage() {
     <div className="site-card" key={site.id}>
       <div className="site-card-head">
         <h3>{localizedName(site.names, current)}</h3>
-        {longHaul ? <span className="bortle-badge long-haul-badge">{t("tips.longHaul")}</span> : <span className="bortle-badge">Bortle {site.bortleClass}</span>}
+        <div className="site-card-badges">{longHaul ? <span className="bortle-badge long-haul-badge">{t("tips.longHaul")}</span> : <span className="bortle-badge">Bortle {site.bortleClass}</span>}<FavoriteButton type="sites" id={site.id} /></div>
       </div>
       <p className="muted">
         {t("tips.distanceKm", { km: distanceKm })} · {localizedName(site.region, current)}
@@ -166,7 +168,18 @@ export default function ShowerDetailPage() {
     <div className="page">
       <section className="card">
         <p className="hero-eyebrow">{t("shower.meteorShower")}</p>
-        <h1>{localizedName(shower.names, current)}</h1>
+        <div className="detail-title-row">
+          <h1>{localizedName(shower.names, current)}</h1>
+          <div className="detail-actions">
+            <FavoriteButton type="showers" id={shower.id} />
+            <button type="button" className="btn-small" onClick={() => downloadICS({
+              title: `${localizedName(shower.names, current)} ${t("calendar.eventSuffix")}`,
+              start: new Date(shower.peakUTC),
+              description: `${t("calendar.description")} ${localizedName(location.name, current)}`
+            })}>{t("calendar.addToCalendar")}</button>
+            <button type="button" className="btn-primary" onClick={() => navigate(`/${current}/observe?shower=${shower.id}`)}>{t("observationMode.open")}</button>
+          </div>
+        </div>
         <p className="muted">
           {t("shower.constellation")}: {visibility?.constellation ?? "—"}
         </p>
