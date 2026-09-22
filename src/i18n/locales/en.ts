@@ -9,6 +9,8 @@ export default {
     favorites: "Favorites",
     compare: "Compare sites",
     log: "Observation log",
+    more: "More",
+    tools: "Observation tools",
     viewFavorites: "View favorites",
     addFavorite: "Save",
     removeFavorite: "Saved",
