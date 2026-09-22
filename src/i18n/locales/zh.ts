@@ -33,6 +33,10 @@ export default {
   home: {
     heroTitle: "去看一眼流星雨",
     heroSubtitle: "你的城市观星指南",
+    startObserving: "开始观星",
+    heroHint: "选择地点，查看今晚是否值得出发",
+    functionalEyebrow: "观星控制台",
+    functionalTitle: "从今晚开始计划你的观测",
     nextPeak: "下一场流星雨极大",
     activeNow: "正在活跃",
     upcoming7: "未来 7 天预告",

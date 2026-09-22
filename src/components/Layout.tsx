@@ -107,7 +107,9 @@ export default function Layout() {
         {moreMenu}
       </nav>
       <main className="site-main">
-        <Outlet />
+        <div key={location.pathname} className="route-transition">
+          <Outlet />
+        </div>
       </main>
       <footer className="site-footer">
         <p>

@@ -33,6 +33,10 @@ export default {
   home: {
     heroTitle: "Go See the Meteor Shower",
     heroSubtitle: "Your city stargazing guide",
+    startObserving: "Start stargazing",
+    heroHint: "Choose a place and see if tonight is worth going out",
+    functionalEyebrow: "Stargazing console",
+    functionalTitle: "Plan your next observation",
     nextPeak: "Next shower peak",
     activeNow: "Active now",
     upcoming7: "Next 7 days",

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import showersData from "../data/showers.json";
@@ -12,6 +12,7 @@ import darkSitesData from "../data/dark-sites.json";
 import type { City, DarkSite } from "../types";
 import { useLocation } from "../context/LocationContext";
 import SearchableSelect, { type SelectOption } from "../components/SearchableSelect";
+import StarfieldCanvas from "../components/StarfieldCanvas";
 
 const DAY_MS = 86400000;
 const showers = showersData as Shower[];
@@ -37,6 +38,7 @@ export default function HomePage() {
   const [selectKey, setSelectKey] = useState("");
   const [locating, setLocating] = useState(false);
   const [locateFailed, setLocateFailed] = useState(false);
+  const functionalAreaRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 60000);
@@ -95,6 +97,10 @@ export default function HomePage() {
     );
   };
 
+  const startObserving = () => {
+    functionalAreaRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const renderRow = (s: Shower) => (
     <tr key={s.id}>
       <td>
@@ -118,11 +124,24 @@ export default function HomePage() {
 
   return (
     <div className="page">
-      <section className="hero">
-        <p className="hero-eyebrow">{t("common.appName")}</p>
-        <h1 className="hero-title">{t("home.heroTitle")}</h1>
-        <p className="hero-subtitle">{t("home.heroSubtitle")}</p>
+      <section className="hero starfield-hero">
+        <StarfieldCanvas />
+        <div className="hero-content">
+          <p className="hero-eyebrow">{t("common.appName")}</p>
+          <h1 className="hero-title">{t("home.heroTitle")}</h1>
+          <p className="hero-subtitle">{t("home.heroSubtitle")}</p>
+          <button type="button" className="hero-cta" onClick={startObserving}>
+            {t("home.startObserving")}
+            <span aria-hidden="true">↓</span>
+          </button>
+          <p className="hero-hint">{t("home.heroHint")}</p>
+        </div>
       </section>
+      <section ref={functionalAreaRef} id="home-functional-area" className="home-functional-area" aria-labelledby="home-functional-title">
+        <div className="functional-area-heading">
+          <p className="hero-eyebrow">{t("home.functionalEyebrow")}</p>
+          <h2 id="home-functional-title">{t("home.functionalTitle")}</h2>
+        </div>
       <section className="home-location card">
         <div>
           <h2>{t("home.locationTitle")}</h2>
@@ -244,6 +263,7 @@ export default function HomePage() {
           </div>
         </section>
       )}
+      </section>
     </div>
   );
 }
