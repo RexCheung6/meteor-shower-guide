@@ -33,13 +33,22 @@ export default function Layout() {
 
   useEffect(() => setMoreOpen(false), [location.pathname]);
 
+  useEffect(() => {
+    if (!moreOpen) return;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMoreOpen(false);
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [moreOpen]);
+
   const moreMenu = (
     <div className={`more-menu ${moreOpen ? "open" : ""}`}>
-      <button type="button" className="more-menu-trigger nav-link" aria-expanded={moreOpen} onClick={() => setMoreOpen((value) => !value)}>
+      <button type="button" className="more-menu-trigger nav-link" aria-haspopup="menu" aria-expanded={moreOpen} onClick={() => setMoreOpen((value) => !value)}>
         <span className="nav-icon" aria-hidden="true">⋯</span><span>{t("common.more")}</span>
       </button>
       {moreOpen && (
-        <div className="more-panel">
+        <div className="more-panel" role="menu">
           <p className="more-panel-title">{t("common.tools")}</p>
           {utilityItems.map((item) => (
             <NavLink key={item.to} to={item.to} className="more-panel-link" onClick={() => setMoreOpen(false)}>
