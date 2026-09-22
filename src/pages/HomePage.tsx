@@ -7,9 +7,15 @@ import { formatDateTime, moonIlluminatedFraction } from "../lib/astro";
 import type { Shower } from "../types";
 import { localizedName, type Locale } from "../lib/locale";
 import ObservationScoreCard from "../components/ObservationScoreCard";
+import { CITIES } from "../data/cities";
+import darkSitesData from "../data/dark-sites.json";
+import type { City, DarkSite } from "../types";
+import { useLocation } from "../context/LocationContext";
+import SearchableSelect, { type SelectOption } from "../components/SearchableSelect";
 
 const DAY_MS = 86400000;
 const showers = showersData as Shower[];
+const darkSites = darkSitesData as DarkSite[];
 
 function moonTierKey(frac: number): string {
   if (frac < 0.1) return "moonNone";
@@ -26,7 +32,11 @@ export default function HomePage() {
   const { t } = useTranslation();
   const { locale } = useParams();
   const current: Locale = locale === "en" ? "en" : "zh";
+  const { location, setLocation } = useLocation();
   const [now, setNow] = useState(() => Date.now());
+  const [selectKey, setSelectKey] = useState("");
+  const [locating, setLocating] = useState(false);
+  const [locateFailed, setLocateFailed] = useState(false);
 
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 60000);
@@ -47,6 +57,43 @@ export default function HomePage() {
     return p > now && p <= now + 30 * DAY_MS;
   });
   const active = sorted.find((s) => now >= dateRangeISO(s.activeStart, false) && now <= dateRangeISO(s.activeEnd, true));
+
+  const locationOptions = useMemo<SelectOption[]>(
+    () => [
+      ...CITIES.map((city: City) => ({
+        key: `city:${city.id}`,
+        label: `${localizedName(city.names, current)} · ${localizedName(city.region, current)}`,
+        searchText: `${city.names.zh} ${city.names.en} ${city.region.zh} ${city.region.en}`
+      })),
+      ...darkSites.map((site) => ({
+        key: `site:${site.id}`,
+        label: `${localizedName(site.names, current)} (Bortle ${site.bortleClass})`,
+        searchText: `${site.names.zh} ${site.names.en} ${site.region.zh} ${site.region.en}`
+      }))
+    ],
+    [current]
+  );
+
+  const geolocate = () => {
+    if (!navigator.geolocation) {
+      setLocateFailed(true);
+      return;
+    }
+    setLocating(true);
+    setLocateFailed(false);
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setLocation({ lat: position.coords.latitude, lng: position.coords.longitude, name: { zh: "我的位置", en: "My location" }, bortleClass: 8 });
+        setSelectKey("");
+        setLocating(false);
+      },
+      () => {
+        setLocating(false);
+        setLocateFailed(true);
+      },
+      { timeout: 10000 }
+    );
+  };
 
   const renderRow = (s: Shower) => (
     <tr key={s.id}>
@@ -75,6 +122,36 @@ export default function HomePage() {
         <p className="hero-eyebrow">{t("common.appName")}</p>
         <h1 className="hero-title">{t("home.heroTitle")}</h1>
         <p className="hero-subtitle">{t("home.heroSubtitle")}</p>
+      </section>
+      <section className="home-location card">
+        <div>
+          <h2>{t("home.locationTitle")}</h2>
+          <p className="muted">{t("home.locationSubtitle")}</p>
+        </div>
+        <div className="location-picker">
+          <SearchableSelect
+            options={locationOptions}
+            value={selectKey}
+            onChange={(key) => {
+              setSelectKey(key);
+              const [type, id] = key.split(":");
+              if (type === "city") {
+                const city = CITIES.find((item) => item.id === id);
+                if (city) setLocation({ lat: city.lat, lng: city.lng, name: city.names, bortleClass: city.bortleClass, region: city.region });
+              } else if (type === "site") {
+                const site = darkSites.find((item) => item.id === id);
+                if (site) setLocation({ lat: site.lat, lng: site.lng, name: site.names, bortleClass: site.bortleClass, region: site.region });
+              }
+            }}
+            placeholder={localizedName(location.name, current)}
+            searchPlaceholder={t("home.locationSearch")}
+            emptyLabel={t("home.locationNoMatch")}
+          />
+          <button type="button" className="btn-small" onClick={geolocate} disabled={locating}>
+            {locating ? t("home.locationLocating") : t("home.locationUseCurrent")}
+          </button>
+        </div>
+        {locateFailed && <p className="muted location-error">{t("home.locationFailed")}</p>}
       </section>
       {active && (
         <div className="banner">

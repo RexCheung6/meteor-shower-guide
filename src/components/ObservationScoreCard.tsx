@@ -42,6 +42,7 @@ export default function ObservationScoreCard() {
   const current: Locale = locale === "en" ? "en" : "zh";
   const { location } = useLocation();
   const [cloud, setCloud] = useState<number | null>(null);
+  const [fetchedAt, setFetchedAt] = useState<number | null>(null);
   const [failed, setFailed] = useState(false);
   const now = useMemo(() => new Date(), []);
   const shower = useMemo(() => {
@@ -56,10 +57,14 @@ export default function ObservationScoreCard() {
   useEffect(() => {
     let cancelled = false;
     setCloud(null);
+    setFetchedAt(null);
     setFailed(false);
     fetchForecast(location.lat, location.lng)
       .then((forecast) => {
-        if (!cancelled) setCloud(tonightCloud(forecast.points, new Date()));
+        if (!cancelled) {
+          setCloud(tonightCloud(forecast.points, new Date()));
+          setFetchedAt(forecast.fetchedAt);
+        }
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
@@ -108,7 +113,13 @@ export default function ObservationScoreCard() {
         <div><span>{t("home.observationWindow")}</span><strong>{assessment.best ? formatDateTime(assessment.best.bestTime, current) : "—"}</strong></div>
       </div>
       <div className="observation-card-footer">
-        <span className="muted">{failed ? t("home.observationWeatherUnavailable") : t("home.observationUpdated")}</span>
+        <span className="muted">
+          {failed
+            ? t("home.observationWeatherUnavailable")
+            : fetchedAt
+              ? t("home.observationUpdated", { time: new Date(fetchedAt).toLocaleTimeString(current === "zh" ? "zh-CN" : "en-US", { hour: "2-digit", minute: "2-digit" }) })
+              : t("home.observationLoading")}
+        </span>
         <Link className="btn-small" to={`/${current}/weather`}>{t("home.observationDetails")}</Link>
       </div>
     </section>

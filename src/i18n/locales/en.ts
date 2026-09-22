@@ -51,6 +51,14 @@ export default {
     observationUpdated: "Weather data connected",
     observationWeatherUnavailable: "Weather unavailable; using a conservative estimate",
     observationDetails: "View full forecast",
+    observationLoading: "Fetching weather data…",
+    locationTitle: "Observing location",
+    locationSubtitle: "Choose a city or dark-sky site to update the score and forecast",
+    locationSearch: "Search city or observing site",
+    locationNoMatch: "No matching place",
+    locationUseCurrent: "Use current location",
+    locationLocating: "Locating…",
+    locationFailed: "Location failed — choose a place manually",
     observationVerdict: { good: "Worth going — plan your session", mid: "Possible — recheck before leaving", bad: "Mixed conditions — try another time or place" }
   },
   shower: {

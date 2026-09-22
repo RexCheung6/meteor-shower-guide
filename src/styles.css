@@ -342,6 +342,20 @@ button {
 .observation-factors strong { font-size: 0.95rem; }
 .observation-card-footer { font-size: 0.82rem; }
 
+.home-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.home-location h2 { margin-bottom: 2px; }
+.home-location p { margin: 0; }
+.home-location .location-picker { margin: 0; min-width: min(100%, 560px); }
+.location-error { color: var(--bad); }
+
+.nav-icon { display: none; }
+
 h1,
 h2,
 h3 {
@@ -1018,6 +1032,54 @@ input[type="search"] {
 
   .observation-card-footer {
     flex-direction: column;
+  }
+
+  .home-location {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .home-location .location-picker {
+    min-width: 0;
+    margin-top: 4px;
+  }
+
+  .site-main {
+    padding-bottom: 86px;
+  }
+
+  .site-footer {
+    padding-bottom: 82px;
+  }
+
+  .main-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+    background: rgba(11, 16, 32, 0.97);
+    border-top: 1px solid var(--card-border);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    padding: 4px 2px;
+    font-size: 0.72rem;
+  }
+
+  .nav-icon {
+    display: block;
+    font-size: 1.05rem;
+    line-height: 1.1;
   }
 
   .map-wrap {

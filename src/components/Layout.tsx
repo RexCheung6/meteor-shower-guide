@@ -12,10 +12,10 @@ export default function Layout() {
   const other: Locale = current === "zh" ? "en" : "zh";
 
   const navItems = [
-    { to: `/${current}`, label: t("common.home"), end: true },
-    { to: `/${current}/map`, label: t("common.visibilityMap"), end: false },
-    { to: `/${current}/weather`, label: t("common.weather"), end: false },
-    { to: `/${current}/tips`, label: t("common.tips"), end: false }
+    { to: `/${current}`, label: t("common.home"), icon: "⌂", end: true },
+    { to: `/${current}/map`, label: t("common.visibilityMap"), icon: "✦", end: false },
+    { to: `/${current}/weather`, label: t("common.weather"), icon: "☁", end: false },
+    { to: `/${current}/tips`, label: t("common.tips"), icon: "✧", end: false }
   ];
 
   const switchLocale = () => {
@@ -40,7 +40,8 @@ export default function Layout() {
         <nav className="main-nav" aria-label="main">
           {navItems.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.end} className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}>
-              {item.label}
+              <span className="nav-icon" aria-hidden="true">{item.icon}</span>
+              <span>{item.label}</span>
             </NavLink>
           ))}
         </nav>

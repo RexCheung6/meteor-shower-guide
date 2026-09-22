@@ -51,6 +51,14 @@ export default {
     observationUpdated: "天气数据已接入",
     observationWeatherUnavailable: "天气暂不可用，已使用保守估算",
     observationDetails: "查看详细天气",
+    observationLoading: "正在获取天气数据…",
+    locationTitle: "观测地点",
+    locationSubtitle: "选择城市或暗空点，评分和天气会随之更新",
+    locationSearch: "搜索城市或观测点",
+    locationNoMatch: "无匹配地点",
+    locationUseCurrent: "使用当前位置",
+    locationLocating: "正在定位…",
+    locationFailed: "定位失败，请手动选择地点",
     observationVerdict: { good: "值得出发，优先安排观测", mid: "可以尝试，建议临近出发再确认", bad: "条件一般，建议换时间或地点" }
   },
   shower: {
