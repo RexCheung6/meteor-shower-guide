@@ -2,6 +2,8 @@ import { Link, NavLink, Outlet, useLocation, useNavigate, useParams } from "reac
 import { useTranslation } from "react-i18next";
 import { logout } from "../auth";
 import { pathWithLocale, setAppLocale, type Locale } from "../lib/locale";
+import { maybeNotifyUpcomingShower } from "../lib/notifications";
+import { useEffect } from "react";
 
 export default function Layout() {
   const { t } = useTranslation();
@@ -11,13 +13,18 @@ export default function Layout() {
   const current: Locale = locale === "en" ? "en" : "zh";
   const other: Locale = current === "zh" ? "en" : "zh";
 
+  useEffect(() => {
+    maybeNotifyUpcomingShower();
+  }, []);
+
   const navItems = [
     { to: `/${current}`, label: t("common.home"), icon: "⌂", end: true },
     { to: `/${current}/map`, label: t("common.visibilityMap"), icon: "✦", end: false },
     { to: `/${current}/weather`, label: t("common.weather"), icon: "☁", end: false },
     { to: `/${current}/tips`, label: t("common.tips"), icon: "✧", end: false },
     { to: `/${current}/favorites`, label: t("common.favorites"), icon: "★", end: false },
-    { to: `/${current}/compare`, label: t("common.compare"), icon: "⇄", end: false }
+    { to: `/${current}/compare`, label: t("common.compare"), icon: "⇄", end: false },
+    { to: `/${current}/log`, label: t("common.log"), icon: "☷", end: false }
   ];
 
   const switchLocale = () => {

@@ -8,6 +8,7 @@ export default {
     tips: "观星技巧",
     favorites: "我的收藏",
     compare: "对比观测点",
+    log: "观测记录",
     viewFavorites: "查看我的收藏",
     addFavorite: "收藏",
     removeFavorite: "已收藏",
@@ -299,6 +300,11 @@ export default {
     radiant: "辐射点高度",
     moon: "月照率",
     expected: "预计流星数/小时",
+    reminderTitle: "极大日前提醒",
+    reminderSubtitle: "开启后，网站会在你下次打开时检查 48 小时内的流星雨。",
+    enableReminder: "开启浏览器提醒",
+    reminderOn: "提醒已开启",
+    reminderDenied: "通知权限被拒绝",
     checklistTitle: "出发前检查",
     checklist: ["提前 20–30 分钟到场，让眼睛完成暗适应。", "手机调低亮度，优先使用红光模式。", "带上保暖衣物、躺椅或防潮垫和充电宝。", "确认返程交通与天气变化，不要在危险区域停留。"]
   },
@@ -311,5 +317,23 @@ export default {
     distance: "距当前位置",
     coordinates: "坐标",
     open: "对比观测点"
+  },
+  log: {
+    title: "观测记录",
+    subtitle: "记录你实际看到的流星数量、天气和拍摄结果。数据仅保存在当前浏览器。",
+    newRecord: "新增记录",
+    shower: "流星雨",
+    date: "观测日期",
+    count: "看到的流星数",
+    countPlaceholder: "可选，例如 18",
+    notes: "备注",
+    notesPlaceholder: "云量、地点、相机设置或观测感受",
+    photo: "照片（可选，单张不超过 2 MB）",
+    save: "保存记录",
+    saveError: "保存失败，可能是浏览器存储空间不足。",
+    history: "历史记录",
+    empty: "还没有观测记录。",
+    delete: "删除",
+    countValue: "记录到 {{count}} 颗流星"
   }
 };

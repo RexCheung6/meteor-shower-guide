@@ -8,6 +8,7 @@ export default {
     tips: "Viewing Tips",
     favorites: "Favorites",
     compare: "Compare sites",
+    log: "Observation log",
     viewFavorites: "View favorites",
     addFavorite: "Save",
     removeFavorite: "Saved",
@@ -299,6 +300,11 @@ export default {
     radiant: "Radiant altitude",
     moon: "Moonlight",
     expected: "Expected meteors/hour",
+    reminderTitle: "Peak-night reminder",
+    reminderSubtitle: "When enabled, the site checks for showers peaking within 48 hours when you return.",
+    enableReminder: "Enable browser reminder",
+    reminderOn: "Reminders enabled",
+    reminderDenied: "Notification permission denied",
     checklistTitle: "Before you leave",
     checklist: ["Arrive 20–30 minutes early so your eyes can dark-adapt.", "Dim your phone and use red light mode when possible.", "Bring warm layers, a reclining chair or mat, and a power bank.", "Check return transport and changing weather; avoid unsafe areas."]
   },
@@ -311,5 +317,23 @@ export default {
     distance: "Distance from you",
     coordinates: "Coordinates",
     open: "Compare sites"
+  },
+  log: {
+    title: "Observation log",
+    subtitle: "Record meteors, conditions and photos. Data stays in this browser.",
+    newRecord: "New record",
+    shower: "Meteor shower",
+    date: "Observation date",
+    count: "Meteors seen",
+    countPlaceholder: "Optional, e.g. 18",
+    notes: "Notes",
+    notesPlaceholder: "Clouds, location, camera settings or what you noticed",
+    photo: "Photo (optional, one file up to 2 MB)",
+    save: "Save record",
+    saveError: "Could not save; browser storage may be full.",
+    history: "History",
+    empty: "No observation records yet.",
+    delete: "Delete",
+    countValue: "Recorded {{count}} meteors"
   }
 };

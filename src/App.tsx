@@ -12,6 +12,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import ObservationModePage from "./pages/ObservationModePage";
 import ComparePage from "./pages/ComparePage";
+import ObservationLogPage from "./pages/ObservationLogPage";
 import { isLoggedIn } from "./auth";
 import { getSavedLocale, SUPPORTED_LOCALES, type Locale } from "./lib/locale";
 import { LocationProvider } from "./context/LocationContext";
@@ -45,6 +46,7 @@ export default function App() {
             <Route path="favorites" element={<FavoritesPage />} />
             <Route path="observe" element={<ObservationModePage />} />
             <Route path="compare" element={<ComparePage />} />
+            <Route path="log" element={<ObservationLogPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
           <Route path="*" element={<Navigate to={`/${getSavedLocale()}`} replace />} />

@@ -6,6 +6,8 @@ import { bestObservingWindow, formatDateTime } from "../lib/astro";
 import { useLocation } from "../context/LocationContext";
 import type { Shower } from "../types";
 import { localizedName, type Locale } from "../lib/locale";
+import { enableNotifications, notificationsEnabled } from "../lib/notifications";
+import { useState } from "react";
 
 const showers = showersData as Shower[];
 
@@ -15,6 +17,7 @@ export default function ObservationModePage() {
   const [searchParams] = useSearchParams();
   const current: Locale = locale === "en" ? "en" : "zh";
   const { location } = useLocation();
+  const [notificationState, setNotificationState] = useState<"off" | "on" | "denied">(() => notificationsEnabled() ? "on" : "off");
   const now = new Date();
   const shower = useMemo(() => {
     const requested = showers.find((item) => item.id === searchParams.get("shower"));
@@ -49,6 +52,14 @@ export default function ObservationModePage() {
         <div className="mode-stat"><span>{t("observationMode.expected")}</span><strong>{best ? `${best.bestRate}` : "—"}</strong></div>
       </section>
       <section className="card mode-checklist">
+        <div className="reminder-row">
+          <div><h2>{t("observationMode.reminderTitle")}</h2><p className="muted">{t("observationMode.reminderSubtitle")}</p></div>
+          <button type="button" className="btn-primary" onClick={async () => {
+            const permission = await enableNotifications();
+            setNotificationState(permission === "granted" ? "on" : permission === "denied" ? "denied" : "off");
+          }} disabled={notificationState === "on"}>{notificationState === "on" ? t("observationMode.reminderOn") : notificationState === "denied" ? t("observationMode.reminderDenied") : t("observationMode.enableReminder")}</button>
+        </div>
+        <hr className="section-divider" />
         <h2>{t("observationMode.checklistTitle")}</h2>
         <ul className="tips-list">
           {(t("observationMode.checklist", { returnObjects: true }) as unknown as string[]).map((item, index) => <li key={index}>{item}</li>)}

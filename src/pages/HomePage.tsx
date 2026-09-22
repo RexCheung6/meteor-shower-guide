@@ -197,6 +197,7 @@ export default function HomePage() {
         <Link className="btn-small" to={`/${current}/favorites`}>{t("common.viewFavorites")}</Link>
         <Link className="btn-small" to={`/${current}/observe`}>{t("observationMode.open")}</Link>
         <Link className="btn-small" to={`/${current}/compare`}>{t("compare.open")}</Link>
+        <Link className="btn-small" to={`/${current}/log`}>{t("common.log")}</Link>
       </div>
       {!next && (
         <section className="card">
