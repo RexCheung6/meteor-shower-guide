@@ -9,6 +9,8 @@ export default {
     favorites: "我的收藏",
     compare: "对比观测点",
     log: "观测记录",
+    more: "更多",
+    tools: "观测工具",
     viewFavorites: "查看我的收藏",
     addFavorite: "收藏",
     removeFavorite: "已收藏",
